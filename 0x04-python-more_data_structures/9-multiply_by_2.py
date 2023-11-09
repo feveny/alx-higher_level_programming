@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 def multiply_by_2(a_dictionary):
-    a_dictionary = b_dictionary
-    for key, value in b_dictionary.items():
-        a_dictionary[key] = value * 2
-    return a_dictionary
+    new_dir = a_dictionary.copy()
+    list_keys = list(new_dir.keys())
+
+    for i in list_keys:
+        new_dir[i] *= 2
+
+    return (new_dir)
